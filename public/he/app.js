@@ -66,17 +66,17 @@
     error.hidden = valid; custom.setAttribute('aria-invalid', String(!valid)); submit.disabled = !valid;
     if (!valid) { document.getElementById('gift-per-year').textContent = 'בחרו סכום'; document.getElementById('gift-total').textContent = ''; return; }
     let tier = 'ידידי חוות דרור';
-    let impact = 'היו חלק מקהילה דואגת שתומכת בבני נוער, בכלבים ובסוסים.';
-    if (amount >= 100000) { tier = 'שותפים לשינוי'; impact = 'עזרו להבטיח את עתידה של חוות דרור. דברו איתנו על שותפות משמעותית ועל הזדמנויות ההנצחה.'; }
-    else if (amount >= 50000) { tier = 'שותפים מובילים'; impact = 'עזרו לקדם את הקמת המרחב המוגן ואת העתיד היציב של חוות דרור.'; }
-    else if (amount >= 25000) { tier = 'שותפים מייסדים'; impact = 'הצטרפו למעגל המייסדים שמניח בסיס בטוח וקבוע לפרק הבא של חוות דרור.'; }
-    else if (amount >= 10000) { tier = 'שותפים לבנייה'; impact = 'עזרו להפוך את המרחב המוגן ואת החזון החינוכי של חוות דרור למציאות.'; }
-    else if (amount >= 2500) { tier = 'שותפים לדרך'; impact = 'עזרו לקיים את התוכניות, הציוד והטיפול היומיומי שמאפשרים את הקשר.'; }
+    let impact = 'כל תרומה עוזרת לנו להמשיך ללוות את בני הנוער ולטפל בבעלי החיים.';
+    if (amount >= 100000) { tier = 'שותפים לשינוי'; impact = 'נשמח לתאם איתכם תרומה משמעותית לפיתוח החווה ולספר על אפשרויות ההנצחה.'; }
+    else if (amount >= 50000) { tier = 'שותפים מובילים'; impact = 'התרומה תעזור לקדם את הקמת המרחב המוגן ולבסס את פעילות החווה לשנים הבאות.'; }
+    else if (amount >= 25000) { tier = 'שותפים לפיתוח החווה'; impact = 'התרומה תעזור לנו לפתח את החווה וליצור תנאים טובים יותר ללמידה ולטיפול.'; }
+    else if (amount >= 10000) { tier = 'שותפים לבנייה'; impact = 'התרומה תסייע בהקמת המרחב המוגן ובפיתוח הפעילות החינוכית בחווה.'; }
+    else if (amount >= 2500) { tier = 'שותפים לדרך'; impact = 'התרומה תסייע לפעילות החינוכית, לרכישת ציוד ולטיפול היומיומי בבעלי החיים.'; }
     document.getElementById('gift-tier').textContent = tier;
     const value = document.getElementById('gift-per-year');
     value.replaceChildren(document.createTextNode(money(amount / years, years > 1 ? 2 : 0)));
     const suffix = document.createElement('small'); suffix.textContent = years > 1 ? ' לשנה' : ' בסך הכול'; value.append(suffix);
-    document.getElementById('gift-total').textContent = years > 1 ? `התחייבות כוללת של ${money(amount)} בפריסה ל־${years} שנים` : 'תרומה חד־פעמית לקמפיין';
+    document.getElementById('gift-total').textContent = years > 1 ? `סך התרומה: ${money(amount)} בפריסה ל־${years} שנים` : 'תרומה חד־פעמית לקמפיין';
     document.getElementById('gift-impact').textContent = impact;
   }
   form.querySelectorAll('input[name="gift"]').forEach(input => input.addEventListener('change', () => { selectedAmount = Number(input.value); custom.value = ''; updateGift(); }));
@@ -87,7 +87,7 @@
     const { amount, years, valid } = giftState();
     if (!valid) { updateGift(); custom.focus(); return; }
     const subject = 'מקום בטוח לצמוח — שיחה על תרומה';
-    const body = `שלום גלעד,\n\nאשמח לשוחח על תמיכה בחוות דרור.\n\nסכום התרומה שאני שוקל/ת: ${money(amount)}\nפריסה: ${years === 1 ? 'תרומה אחת' : `לאורך ${years} שנים (כ־${money(amount / years, 2)} בשנה)`}\n\nאשמח לפרטים על מסלול התרומה, הקבלה והצעדים הבאים.\n\nשם:\nמדינה:\nדרך מועדפת ליצירת קשר:\n\nתודה!`;
+    const body = `שלום גלעד,\n\nאשמח לשוחח על תמיכה בחוות דרור.\n\nסכום התרומה שאני שוקל/ת: ${money(amount)}\nפריסה: ${years === 1 ? 'תרומה חד־פעמית' : `לאורך ${years} שנים (כ־${money(amount / years, 2)} בשנה)`}\n\nאשמח לדעת איך אפשר להעביר את התרומה ולקבל קבלה.\n\nשם:\nמדינה:\nדרך מועדפת ליצירת קשר:\n\nתודה!`;
     window.location.href = `mailto:gilad@drorisrael.org.il?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
   updateGift();
