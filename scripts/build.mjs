@@ -1,4 +1,4 @@
-import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
 // SITE_URL is the stable public origin, not an individual preview deployment URL.
@@ -18,5 +18,15 @@ if (!html.includes('__SITE_URL__')) throw new Error('The site URL placeholder is
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 await cp(source, output, { recursive: true });
-await writeFile(new URL('../dist/index.html', import.meta.url), html.replaceAll('__SITE_URL__', url.origin));
+async function replaceOrigins(directory) {
+  for (const entry of await readdir(directory, { withFileTypes: true })) {
+    const file = directory + '/' + entry.name;
+    if (entry.isDirectory()) await replaceOrigins(file);
+    else if (entry.name.endsWith('.html')) {
+      const content = await readFile(file, 'utf8');
+      await writeFile(file, content.replaceAll('__SITE_URL__', url.origin));
+    }
+  }
+}
+await replaceOrigins(output);
 console.log(`Site ready in dist/ with sharing URLs for ${url.origin}`);
