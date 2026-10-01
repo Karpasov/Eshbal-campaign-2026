@@ -169,3 +169,15 @@ html{scroll-padding-top:180px}
  .giving-copy{padding:0 2.2%}
  .gift-planner>summary{font-size:17px}
 }
+
+/* Compact English-footer locator; no external map is loaded until clicked. */
+.footer-location{min-width:0;max-width:270px}
+.footer-address{font-size:16px;font-weight:700;line-height:1.5}
+.footer-address>span{font-size:13px;font-weight:400;color:#ccc}
+.footer-map{display:block;margin-top:17px;border:1px solid #ffffff30;border-radius:8px;overflow:hidden;transition:border-color .2s;background:#192328}
+.footer-map>img{width:100%;height:auto}
+.footer-map>span{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 13px;border-top:1px solid #ffffff20;font-size:12px;line-height:1.4;color:white}
+.footer-top .footer-map:hover{text-decoration:none;border-color:var(--yellow)}
+.footer-map:hover>span{text-decoration:underline;text-underline-offset:4px}
+.footer-map:focus-visible{outline:3px solid var(--yellow);outline-offset:4px}
+@media(max-width:640px){.footer-location{max-width:320px}.footer-address{font-size:17px}.footer-address>span{font-size:14px}.footer-map>span{font-size:14px;min-height:44px}}
