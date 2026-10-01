@@ -1,23 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="258" viewBox="0 0 320 258" role="img" aria-labelledby="map-title map-description">
-<title id="map-title">Eshbal and Haifa in northern Israel</title>
-<desc id="map-description">A close-up, north-up map of northern Israel. Eshbal is highlighted northeast of Haifa, which is marked on the Mediterranean coast.</desc>
-<metadata>Outline: Natural Earth 1:50m Admin 0 Countries (public domain), https://www.naturalearthdata.com/about/terms-of-use/ ; source: https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_admin_0_countries.geojson . Spherical Mercator projection, cropped to northern Israel. Eshbal: 32.876984 N, 35.30601 E, verified Google Maps listing and https://www.wikidata.org/wiki/Q2890174 . Haifa: 32.794044 N, 34.989571 E, https://www.latlong.net/place/haifa-israel-6462.html . Verified 2026-10-01. Generalized locator, not a navigation map.</metadata>
-<defs><clipPath id="north-region"><rect y="44" width="320" height="214"/></clipPath></defs>
+<title id="map-title">Eshbal, Haifa, Acre and the Sea of Galilee</title>
+<desc id="map-description">A close-up physical map of the Galilee and Haifa Bay in northern Israel. Eshbal is highlighted inland, east of Acre and northeast of Haifa. The Sea of Galilee is shown to the east.</desc>
+<metadata>Physical geography: Natural Earth 1:10m land and lakes, public domain. https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_land.geojson ; https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_lakes.geojson . Mercator projection. Viewport: 32.64 to 33.14 N, 34.83 to 35.720383 E. Eshbal 32.876984 N, 35.30601 E (verified Google Maps); Haifa 32.794044 N, 34.989571 E (latlong.net/place/haifa-israel-6462.html); Acre 32.9214 N, 35.0692 E (openbible.info/geo/modern/mc58154/acre; cross-checked Getty TGN 7001354 and UNESCO Old City of Acre). Lake shape: Natural Earth Sea of Galilee feature, Wikidata Q126982. Verified 2026-10-01. Generalized locator, not a navigation map.</metadata>
+<defs><clipPath id="galilee-frame"><rect y="44" width="320" height="214"/></clipPath></defs>
 <rect width="320" height="258" rx="8" fill="#192328"/>
-<g clip-path="url(#north-region)"><path d="M273.87,-11.36 L268.21,3.46 L262.78,11.11 L261.06,22.95 L264.51,32.57 L266.48,45.64 L270.68,49.34 L272.16,57.98 L268.46,66.36 L270.18,73.27 L274.87,79.68 L278.08,105.83 L284.73,118.16 L274.13,136.91 L272.16,152.20 L261.58,175.50 L249.43,177.14 L221.08,189.94 L217.24,193.78 L212.26,201.20 L211.38,206.94 L207.34,268.13 L191.91,266.45 L173.11,253.11 L169.45,241.55 L163.79,237.61 L150.38,236.12 L124.95,230.26 L95.46,250.43 L82.93,283.74 L80.39,299.28 L70.37,331.94 L73.92,351.99 L75.63,377.90 L78.14,399.13 L75.51,411.83 L69.88,418.64 L71.56,423.49 L76.59,425.26 L92.74,419.54 L109.74,425.28 L126.05,436.22 L127.35,443.34 L115.79,447.54 L88.47,464.09 L69.22,483.26 L64.22,501.00 L51.23,538.67 L53.01,546.40 L59.30,550.94 L103.77,546.93 L144.13,531.68 L174.50,515.47 L184.13,516.45 L177.76,557.92 L177.91,558.07 L172.66,583.45 L174.72,587.77 L181.53,609.83 L168.59,650.14 L154.13,682.87 L149.01,698.39 L134.92,732.85 L120.53,772.81 L112.84,800.30 L114.57,810.06 L111.00,860.40 L113.07,874.66 L96.18,918.20 L92.79,939.68 L86.00,968.82 L74.39,1030.24 L58.49,1050.77 L50.56,1027.89 L32.46,962.18 L19.56,917.10 L1.98,861.43 L-27.67,793.59 L-30.41,777.23 L-36.81,753.48 L-57.28,691.54 L-73.94,646.72 L-93.08,589.43 L-69.38,566.66 L-68.96,547.86 L-28.62,503.95 L-28.95,499.63 L-39.71,487.96 L-38.18,485.96 L6.54,403.90 L35.38,322.32 L62.53,208.52 L81.85,150.42 L98.22,111.91 L105.48,79.95 L131.87,77.67 L151.54,81.09 L175.08,82.15 L193.93,70.12 L202.98,34.12 L213.74,28.34 L219.17,36.83 L224.77,27.36 L249.43,11.52 L261.63,1.29 L273.87,-11.36 Z" fill="#b0e4ec" stroke="#d9f1f5" stroke-width="1.2" stroke-linejoin="round" fill-rule="evenodd"/></g>
+<g clip-path="url(#galilee-frame)"><path d="M32.16,258.00 L32.03,256.73 L40.28,221.91 L42.24,183.60 L45.13,174.95 L50.48,171.96 L55.05,173.07 L62.33,177.87 L67.83,178.95 L71.05,178.27 L83.65,164.70 L85.20,161.06 L88.24,149.83 L89.71,144.38 L89.06,139.22 L84.62,136.99 L86.81,130.63 L89.30,104.54 L94.15,90.67 L95.67,82.46 L94.21,75.02 L95.76,73.45 L97.69,70.76 L99.36,69.42 L96.90,66.49 L98.57,66.09 L98.92,65.88 L98.92,65.18 L99.36,63.29 L97.72,63.54 L97.19,63.01 L97.19,61.93 L96.90,60.62 L99.12,55.82 L102.34,50.98 L106.20,47.21 L113.82,44.00 L320.00,44.00 L320.00,258.00 Z          " fill="#b0e4ec" stroke="#d9f1f5" stroke-width="1" stroke-linejoin="round" fill-rule="evenodd"/><path d="M291.00,168.28 L290.16,172.31 L290.05,175.83 L291.43,180.74 L289.31,192.20 L289.52,197.36 L291.43,201.51 L289.31,202.64 L288.89,204.40 L289.10,206.79 L288.99,210.06 L276.51,224.78 L268.47,223.77 L265.82,216.35 L264.66,208.05 L260.64,204.15 L258.52,202.64 L254.40,192.45 L248.37,183.39 L246.99,180.74 L249.32,167.40 L260.53,155.18 L273.76,147.75 L281.59,148.63 L287.62,154.30 L290.26,157.57 L291.43,161.86 L291.00,168.28 Z" fill="#192328" stroke="#668f99" stroke-width="1" fill-rule="evenodd"/></g>
 <g font-family="Arial,Helvetica,sans-serif">
 <text x="18" y="27" fill="#fff" font-size="13" font-weight="700" letter-spacing="1.1">NORTHERN ISRAEL</text>
 <path d="M290 30V16M286 21L290 16L294 21" fill="none" stroke="#d7e1e4" stroke-width="1.4"/>
 <text x="275" y="28" fill="#d7e1e4" font-size="10" font-weight="700">N</text>
-<text x="17" y="112" fill="#d7e1e4" font-size="10">Mediterranean</text>
-<text x="38" y="126" fill="#d7e1e4" font-size="10">Sea</text>
-<circle cx="78.10" cy="159.33" r="4.5" fill="#101010" stroke="#fff" stroke-width="2"/>
-<text x="87.10" y="181.33" fill="#192328" font-size="16" font-weight="700">Haifa</text>
-<circle cx="150.88" cy="136.62" r="12" fill="#fff000" fill-opacity=".35"/>
-<path d="M157.88 136.62H180" stroke="#192328" stroke-width="1.5"/>
-<circle cx="150.88" cy="136.62" r="5.5" fill="#fff000" stroke="#101010" stroke-width="2"/>
-<rect x="180" y="119.62" width="111" height="35" rx="4" fill="#192328"/>
-<text x="192" y="142.62" fill="#fff000" font-size="18" font-weight="700">ESHBAL</text>
-<text x="302" y="241" text-anchor="end" fill="#192328" font-size="10">Galilee · Israel</text>
+<text x="12" y="156" fill="#d7e1e4" font-size="10">Mediterranean</text><text x="34" y="170" fill="#d7e1e4" font-size="10">Sea</text>
+<path d="M85.97 137.71L64 108" stroke="#fff" stroke-width="1.3" fill="none"/>
+<circle cx="85.97" cy="137.71" r="4.5" fill="#192328" stroke="#fff" stroke-width="2"/>
+<text x="12" y="97" fill="#fff" font-size="14" font-weight="700">Acre (Akko)</text>
+<circle cx="57.35" cy="192.20" r="4.5" fill="#192328" stroke="#fff" stroke-width="2"/>
+<text x="68.35" y="199.20" fill="#192328" font-size="16" font-weight="700">Haifa</text>
+<circle cx="171.08" cy="156.72" r="12" fill="#fff000" fill-opacity=".4"/>
+<path d="M171.08 148.72V124" stroke="#192328" stroke-width="1.5" fill="none"/>
+<circle cx="171.08" cy="156.72" r="5.5" fill="#fff000" stroke="#101010" stroke-width="2"/>
+<rect x="145" y="90" width="112" height="34" rx="4" fill="#192328"/>
+<text x="157" y="113" fill="#fff000" font-size="18" font-weight="700">ESHBAL</text>
+<text x="180" y="216" fill="#192328" font-size="13" font-weight="700">Sea of</text><text x="180" y="232" fill="#192328" font-size="13" font-weight="700">Galilee</text>
+<path d="M227 215L251 204" stroke="#192328" stroke-width="1.1" fill="none"/>
 </g>
 </svg>
