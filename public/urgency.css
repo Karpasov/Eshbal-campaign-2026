@@ -5,3 +5,14 @@
 @media(max-width:640px){.urgency-banner{font-size:13px;padding:12px 5%;gap:8px}.urgency-hero{min-height:0}.urgency-hero .hero-content{width:100%;padding:285px 7% 42px}.urgency-hero .hero-photo{height:370px}.urgency-hero h1{font-size:clamp(2.35rem,9.5vw,3.2rem);line-height:1.12}.urgency-hero .hero-description{font-size:17px;line-height:1.65}.hero-deadline{font-size:16px;margin-bottom:20px}.hero-pledge{font-size:14px}.urgency-summary{padding:35px 7%}.urgency-steps{grid-template-columns:1fr;gap:24px}.urgency-steps>div{padding-inline-start:18px;border-inline-start:3px solid #e4cd00}.urgency-number{margin-bottom:6px}.urgency-steps h2{font-size:1.5rem;margin-bottom:6px}.urgency-goal{font-size:15px}.mobile-urgency-give{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:75;align-items:center;justify-content:center;gap:18px;padding:15px 16px calc(15px + env(safe-area-inset-bottom));background:var(--yellow);color:#111;font-size:17px;font-weight:700;box-shadow:0 -4px 20px #0002}.mobile-urgency-give span{font-size:24px;line-height:1}body{padding-bottom:calc(58px + env(safe-area-inset-bottom))}.site-footer{padding-bottom:35px}}
 @media(min-width:641px){.urgency-hero .hero-photo:after{background:linear-gradient(90deg,#101010f5 0%,#101010dc 30%,#10101099 50%,#10101020 75%,transparent)}[dir=rtl] .urgency-hero .hero-photo:after{background:linear-gradient(270deg,#101010f5 0%,#101010dc 30%,#10101099 50%,#10101020 75%,transparent)}}
 @media(max-width:640px){.urgency-hero .hero-controls{top:225px;bottom:auto}}
+
+/* Restore the photograph-led, left-aligned English hero. */
+html[lang=en] .urgency-hero .hero-content{width:49%;max-width:690px;padding-inline-start:4%;padding-inline-end:0;padding-top:55px;padding-bottom:70px}
+html[lang=en] .urgency-hero h1{font-size:clamp(4.2rem,6.5vw,6.5rem);line-height:.98;letter-spacing:-.035em;text-wrap:initial;margin:20px 0 26px}
+html[lang=en] .urgency-hero h1 span,html[lang=en] .urgency-hero h1 em{display:block}
+html[lang=en] .urgency-hero .hero-description{max-width:360px;font-size:18px;line-height:1.6}
+.urgency-steps h2{display:inline;box-decoration-break:clone;-webkit-box-decoration-break:clone;background:var(--yellow);color:#111;padding:3px 8px;line-height:1.65}
+.urgency-steps h2+p{margin-top:15px}
+@media(min-width:641px){html[lang=en] .urgency-hero .hero-photo:after{background:linear-gradient(90deg,#101010f5 0%,#101010d9 18%,#10101080 33%,#10101015 48%,transparent 62%)}}
+@media(max-width:900px) and (min-width:641px){html[lang=en] .urgency-hero .hero-content{width:54%;padding-inline-start:4%}html[lang=en] .urgency-hero h1{font-size:clamp(3.8rem,7vw,4.6rem)}}
+@media(max-width:640px){html[lang=en] .urgency-hero .hero-content{width:100%;max-width:none;padding:285px 7% 42px}html[lang=en] .urgency-hero h1{font-size:clamp(3.5rem,15vw,4.5rem);line-height:1.01}html[lang=en] .urgency-hero .hero-description{font-size:17px;max-width:360px}.urgency-steps h2{line-height:1.65}}
